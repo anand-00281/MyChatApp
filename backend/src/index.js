@@ -1,16 +1,16 @@
 // backend/src/index.js
 import express from "express";
+import authRoutes from "./routes/auth.routes.js"
 import dotenv from "dotenv";
-import cookieParser from "cookie-parser";
-import cors from "cors";
-import http from "http";
-import path from "path";
-import { fileURLToPath } from "url";
+import cookieParser from "cookie-parser"
+import messageRoutes from "./routes/message.routes.js"
+import cors from "cors"
 
-import authRoutes from "../routes/auth.routes.js";
-import messageRoutes from "../routes/message.routes.js";
-import { connectDb } from "../lib/db.js";
-import { initSocket } from "../lib/socket.js";
+import path from "path";
+import http from "http";
+import { fileURLToPath } from "url";
+import { connectDb } from "./lib/db.js";
+import { initSocket } from "./lib/socket.js";
 
 // __dirname replacement for ES module
 const __filename = fileURLToPath(import.meta.url);
