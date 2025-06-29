@@ -34,8 +34,8 @@ if(process.env.NODE_ENV === "production"){
     });
 }
 
-server.listen(process.env.PORT || 5001, () => {
-    console.log(`server is running on port ${process.env.PORT || 5001}`);
+server.listen(process.env.PORT || 5000, () => {
+    console.log(`server is running on port ${process.env.PORT || 5000}`);
 
     connectDb();
 });
