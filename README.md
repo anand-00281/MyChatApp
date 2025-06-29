@@ -94,7 +94,7 @@ CHATAPP/
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/anand-00281/MyChatApp.git
    cd CHATAPP
    ```
 
